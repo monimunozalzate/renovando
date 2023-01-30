@@ -2,25 +2,29 @@
     width: 100%;
     box-sizing: border-box;
 }
+title{
+    background-color: black;
+}
 body{
     background-image: url("./img/fondoDesktop.jpg");
-    width: 100vw;
+    background-position: center;
+    width: 100%;
     height: 100%;
-    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 3rem 3rem;
+    padding: 6rem;
     margin: 0%;
 }
 header{
     display: flex;
+    width: 100%;
 }
 header img{
     width: 13%;
 }
-header .menu{
+/* header .menu{
     display: none;
-}
+} */
 main{
     display: flex;
     flex-direction: column;
@@ -38,8 +42,23 @@ main .upper .left{
     justify-content: space-around;
     align-items: flex-start;
 }
-main .upper .left .esperalo{
+/* main .upper .left .esperalo{
     width: 80%;
+} */
+main .upper .left h3{
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+    margin: 1rem 0;
+    font-family: 'Poppins', sans-serif;
+    /* line-height: 2.6rem; */
+}
+main .upper .left h1{
+    font-size: 2rem;
+    color: white;
+    margin: 0%;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
 }
 main .upper .right{
     display: flex;
@@ -73,7 +92,7 @@ main .icons{
     align-items: center;
     width: 100%;
     display: block;
-    padding: 3rem 0;
+    padding: 5rem 0;
     text-align: center;
 }
 main .icons img{
@@ -86,41 +105,53 @@ footer{
     display: block;
     margin: auto;
 }
-@media (max-width: 780px){
+@media (max-width: 425px){
     body{
         background-image: url("./img/fondoPhone.jpg");
+        background-position: center;
         width: 100vw;
+        padding:2rem;
     }
     header{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        height: 5rem;
     }
     header img{
-        width: 25%;
+        width: 35%;
     }
-    header .menu{
+    /* header .menu{
         display: block;
         height: auto;
-        width: 12%;
-    }
+        width: 15%;
+    } */
     main{
         margin-top: 10rem;
-        padding-bottom: 3rem;
     }
     main .upper{
         flex-direction: column;
-        width: 85%;
         padding-bottom: 1rem;
     }
     main .upper .left{
         width: 100%;
         gap: 2rem;
     }
+    main .upper .left h3{
+        font-size: 1rem;
+        color: white;
+        margin: 0%;
+    }
+    main .upper .left h1{
+        font-size: 2rem;
+        color: white;
+        margin: 0%;
+        font-weight: 900;
+    }
     main .upper .right{
-        width: 85%;
-        padding: 1rem 1rem;
-        margin: 1rem 12rem;
+        width: 100%;
+        padding: 2rem 0;
+        /* margin: 1rem 12rem; */
     }
     main .icons{
         display: none;
@@ -132,7 +163,7 @@ footer{
     }
     main .icons-phone img{
         width: auto;
-        height: 3.1rem;
+        height: 2rem;
         margin: 0px 1.3rem;
     }
 }
